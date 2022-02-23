@@ -16,17 +16,24 @@
 			body {
 				margin: 40px !important;
 			}
+			header p {
+				color: #999;
+			}
+			p.author {
+				margin-bottom: 3em;
+			}
 		</style>
 	</head>
 	<body style="margin: 0px;">
 		<div style class="md"></div>
 		<script>
 			async function load(url, el) {
-				const raw = await fetch(url).then(response => response.text());
-				const muchmarkable = new Remarkable({
+				var raw = await fetch(url).then(response => response.text());
+				var muchmarkable = new Remarkable({
 					html: true
 				});
-				el.innerHTML = muchmarkable.render(raw);
+				var data = raw.split("---")[0].split("\n");
+				el.innerHTML = muchmarkable.render(`<header><h1>${data[0]}</h1><p class="desc">${data[1]}</p><p class="author">by ${data[2]}</p></header>${raw}`);
 				hljs.highlightAll(); // :o
 			}
 			load(`./markdown/${(new URLSearchParams(location.search)).get("name")}.md`, document.querySelector(".md")).then(() => console.log("done :p"));
