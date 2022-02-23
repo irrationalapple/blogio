@@ -1,0 +1,42 @@
+https://api.github.com/repos/illogicalapple/blogio/git/trees/main?recursive=1
+
+example
+
+{
+  "sha": "492de605080ab117e67b386ed140f819251bbb09",
+  "url": "https://api.github.com/repos/illogicalapple/blogio/git/trees/492de605080ab117e67b386ed140f819251bbb09",
+  "tree": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ba5faca6c56e4856f3a74f00eed19af14a491bb",
+      "size": 1071,
+      "url": "https://api.github.com/repos/illogicalapple/blogio/git/blobs/4ba5faca6c56e4856f3a74f00eed19af14a491bb"
+    },
+    {
+      "path": "index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37cfc0a46c017ad31b58a1269dfb4c5743f27968",
+      "size": 878,
+      "url": "https://api.github.com/repos/illogicalapple/blogio/git/blobs/37cfc0a46c017ad31b58a1269dfb4c5743f27968"
+    },
+    {
+      "path": "markdown",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56c6978ae0d7f4b4f0a26a6d95bf473e7bc55499",
+      "url": "https://api.github.com/repos/illogicalapple/blogio/git/trees/56c6978ae0d7f4b4f0a26a6d95bf473e7bc55499"
+    },
+    {
+      "path": "markdown/helloworld.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a90e2c43fb09ecaf2219fd0de3698a7ce2e31d6",
+      "size": 288,
+      "url": "https://api.github.com/repos/illogicalapple/blogio/git/blobs/6a90e2c43fb09ecaf2219fd0de3698a7ce2e31d6"
+    }
+  ],
+  "truncated": false
+}
